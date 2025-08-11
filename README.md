@@ -18,7 +18,8 @@ Ce dépôt contient le **frontend** de Rare Farm, développé avec React et Vite
 
 Le **backend** est un projet séparé, hébergé sur Render, qui expose une API REST consommée par ce frontend.
 
-- Dépôt backend : [Lien vers le dépôt backend] (https://github.com/Nootka11/rareFarmBack)
+- Dépôt backend : [https://rarefarmback.onrender.com/](https://rarefarmback.onrender.com/)
+- (https://github.com/Nootka11/rareFarmBack)
 
 ---
 
