@@ -15,8 +15,8 @@ const sectionImages = {
   "Animations": "/images/animations.jpg",
   "Recipes": "/images/recipes.jpg",
   "Contact": "/images/contact.jpg",
-  "Animals" : '/src/assets/img/platypus.webp',
-  "Plants" : '/src/assets/img/about.jpg',
+  "Animals" : '/images/platypus.webp',
+  "Plants" : '/images/about.jpg',
 };
 
 function NavBarResponsive() {
