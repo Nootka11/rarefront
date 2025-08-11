@@ -1,6 +1,6 @@
 
 import { useState , useEffect} from 'react';
-import { AnimalContext } from './animalContext'
+import { AnimalContext } from './AnimalContext.jsx'
 import axios from "axios";
 import { API_URL } from "../../.config.js";
 
