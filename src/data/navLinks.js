@@ -8,10 +8,10 @@ export const navLinks = [
       { text: "Plants", url: "/farm-life/plants" }
     ]
    },
-  { text: "Animations", url: "/animations-6", active: true },
+  { text: "Animations", url: "/animations-6", active: false },
   { text: "Recipes", url: "/recipes", active: false },
   { text: "Contact", url: "/contact", active: true },
-  { text: "test", url: "/testDome", active: true },
+  { text: "test", url: "/testDome", active: false },
 ];
 
 export const navLinksMobile = [
