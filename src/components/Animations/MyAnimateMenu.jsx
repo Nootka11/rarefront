@@ -212,10 +212,10 @@ const MenuItem = ({ item }) => {
       }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}>
-         <Link to={item.url} >
+         <Link to={item.url} className='w-full  text-center'>
             {item.text}
         </Link>
-         {/* <a href={item.url} className=' w-full  text-center'>
+         {/* <a href={item.url} className='w-full  text-center'>
           {item.text}
         </a> */}
    
