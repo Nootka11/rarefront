@@ -3,12 +3,9 @@ import React, { useRef, useState } from 'react'
 import { CiMenuBurger } from "react-icons/ci";
 import { Link } from 'react-router';
 import { motion } from 'motion/react'
-import ResponsiveMenu from '../Animations/ResponsiveMenu';
-import useDimensions from '../Utils/UseDimensions';
-import { SidebarMenu } from '../Animations/SideBarMenu';
-import MyAnimateMenu from '../Animations/MyAnimateMenu';
 import LettersColorHover from '../Animations/LettersColorHover';
 import {navLinks,navLinksMobile} from '../../data/navLinks';
+import MyAnimateMenu from '../Animations/MyAnimateMenu';
 
 
 const sectionImages = {
@@ -44,8 +41,7 @@ function NavBarResponsive() {
                     {/* button desktop */}
                     <div className='hidden md:block'>
                  {navLinks.filter(link => link.active).map(link => (
-                            <span
-                                key={link.url}
+                            <span key={link.url}
                                 className="relative"
                                 onMouseEnter={() => setHoveredItem(link.text)}
                                 onMouseLeave={() => setHoveredItem(null)}

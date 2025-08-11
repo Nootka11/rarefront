@@ -15,7 +15,6 @@ import FarmLife from "../pages/FarmLife/FarmLife";
 import Contact from "../pages/Contact/Contact";
 import MyAnimations from "../components/Animations/Animations";
 // import ScrollAnimations from  "../components/Animations/ScrollAnimations"
-import UseScrollBasic from "../components/Animations/UseScrollBasic";
 import UseScrollAdvanced from "../components/Animations/UseScrollAdvanced";
 import TextAnimation from "../components/Animations/TextAnimation";
 

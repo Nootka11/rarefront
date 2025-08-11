@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { VegetableContext } from '../../context/VegetableContext';
 import { API_URL } from '../../../.config';
-import LottieWalk from '../../components/Animations/LottieWalk';
 import LottieBee from '../../components/Animations/LottieBee';
 import AnimatedSplitText from '../../components/Animations/AnimatedSplitText';
 import { motion, useScroll } from 'motion/react'

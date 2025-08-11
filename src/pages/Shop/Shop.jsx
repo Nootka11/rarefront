@@ -6,8 +6,7 @@ import { Link } from 'react-router';
 
 function Shop() {
   const { products, categories } = useContext(ProductContext);
-  //const productImage = imageUrl ? `${API_URL}${imageUrl}` : defaultImage;
-  console.log(products)
+
 
   return (
 

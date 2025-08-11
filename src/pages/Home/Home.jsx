@@ -4,7 +4,7 @@ import Products from './Products'
 import About from './About'
 import HowItWorks from './HowItWorks'
 import Testimonial from './Testimonial'
-import Favourites from './Favourites'
+
 
 
 const Home = () => {
@@ -12,8 +12,7 @@ const Home = () => {
     <div>
         <Hero/>        
         <Products/>
-        <About/>
-        {/* <Favourites/>      */}
+        <About/>        
         <HowItWorks/>
         <Testimonial/>
         <Features/>
