@@ -6,7 +6,7 @@ import { useContext } from 'react'
 
 import AnimatedSplitText from '../../components/Animations/AnimatedSplitText';
 import AnimalCardRounded from './AnimalCard';
-import { AnimalContext } from '../../context/animalContext';
+import { AnimalContext } from '../../context/AnimalContext.jsx';
 import LottieLlama from '../../components/Animations/LottieLLama';
 import { Link } from 'react-router';
 import AnimatedButton from '../../components/Animations/AnimatedButton';

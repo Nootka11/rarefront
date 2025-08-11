@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from 'react'
-import { AnimalContext } from '../../context/animalContext';
+import { AnimalContext } from '../../context/AnimalContext.jsx';
 import { API_URL } from '../../../.config';
 import { motion, useAnimation, useInView, useMotionValueEvent, useScroll } from "motion/react"
 

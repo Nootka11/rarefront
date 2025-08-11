@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { AnimalContext } from '../../context/animalContext';
+import { AnimalContext } from '../../context/AnimalContext.jsx';
 import { API_URL } from '../../../.config';
 import { motion } from "motion/react"
 

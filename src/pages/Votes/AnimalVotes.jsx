@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { AnimalContext } from '../../context/animalContext';
+import { AnimalContext } from '../../context/AnimalContext.jsx';
 import { API_URL } from '../../../.config'
 import axios from 'axios';
 import { FaPlus , FaMinus} from "react-icons/fa";
