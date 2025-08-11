@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@theme {
+    --color-midnight: #121063;
+    --color-tahiti: #3ab7bf;
+    --color-bermuda: #78dcca;
+    --color-canard-2: #264653;
+    --color-canard-1: #2a9d8f;
+    --color-canard-15: #26887C;
+    --color-lemon: #e9c46a;
+    --color-tangerine:#f4a261;
+    --color-coral: #e76f51;
+
+
+  --color-dark-rust: #3b1f1f;
+  --color-clay: #7b3f3f;
+  --color-sand: #c49b77;
+  --color-olive: #4e4a3a;
+  --color-pale-dust: #d4c6b2;
+ 
+  --color-text-main: #d4c6b2;
+  --color-border: #7b3f3f;
+
+  --color-rust-brown: #663435;
+  --color-dusty-mauve: #92757c;
+  --color-soft-lilac-grey: #bdb1c0;
+  --color-sage-green: #9aaaa0;
+  --color-pale-dust: #d5d0c9;
+
+  --color-text-main: #663435;   /* ejemplo: texto principal oscuro */
+  --color-bg-main: #d5d0c9;     /* ejemplo: fondo claro */
+
+  --color-fondo-claro: #FEF9F3;
+  --color-verde-pistacho:#D5D07C;
+  --color-rosa-fresa:#FE8CA3;
+  --color-verde-noche:#39756B;
+  --color-verde-calma:#B2D5B5;
+   --color-verde-calma-100: color-mix(in srgb, var(--color-verde-calma) 20%, white 80%);
+  --color-verde-calma-200: color-mix(in srgb, var(--color-verde-calma) 40%, white 60%);
+  --color-naranja-vida:#FDAF11;
+
+
+}
+
+body {
+  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 
+             "Segoe UI", Roboto, 
+             "Helvetica Neue", Arial, sans-serif;
+
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+h1 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 700; 
+}
+
+.font-goudybook{
+  font-family: 'GoudyBookLetter', Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 600;
+ 
+}
+
+h3 {
+  font-family: system-ui, sans-serif;
+  font-weight: 400;
+ 
+}
+
+p.highlight {
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+ 
+}
+
+p {
+  font-family: system-ui, sans-serif;
+  font-weight: 400;
+ 
+}
+nav a{
+   font-family: 'Poppins', system-ui, sans-serif;
+   font-weight: 400;
+
+}
+.nav__link{
+  position: relative;
+  /* color:var(--color-verde-noche) */
+}
+.nav__link:after{
+background-color: var(--color-verde-noche);
+border-radius: 3px 0 3px 0;
+bottom: 0;
+content: "";
+display: block;
+height: 3px;
+left: 3px;
+position: absolute;
+transform: scaleX(0);
+transform-origin: left;
+transition: all .3s ease-out;
+width: calc(100% - 10px);
+}
+.nav__link:hover:after{
+  opacity: 1;
+  transform: scaleX(1);
+  background-color: var(--color-rosa-fresa)
+}
+
+@layer components{
+  .icons{
+    @apply bg-white text-black py-1 px-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-md;
+  }
+  .navbar__link{
+    @apply hover:text-emerald-700 transition duration-200 ease-in;
+
+  }
+  .productImg__container:hover > .productItem__btn{
+  @apply  top-75; 
+
+}
+  .productImg__container:hover > .productImg_active,.productImg__container > .productImg_hover {
+  @apply  opacity-0; 
+
+}
+  .productImg__container:hover > .productImg_hover{
+  @apply  opacity-100; 
+
+}
+  .productItem__btn{
+    @apply  top-90 transition-all ease-in-out duration-300; 
+
+  }
+  .productImg_hover, .productImg_active{
+    @apply   transition-all ease-in-out duration-600; 
+  }
+}
+.nav__item{
+    display: block;
+    margin: 1rem 0;
+ }
+.nav__item>span{
+    font-weight: bold;
+    position: relative;
+    transition: all 200ms ease-in;
+    
+}
+.nav__item:hover>span{
+    color: var(--color-canard-15);
+    transition: all 200ms ease-in;
+}
+.nav__item>span:after{
+    display: block;
+    content: '';   
+    border-bottom: 2px solid var(--color-canard-15);
+    position: relative;
+    top: 2.1rem;
+    transition: all 200ms ease-in;
+    width: 0px;
+}
+
+
+@media (width >= 48rem) { 
+    .nav__item:hover>span:after{   
+    width:100%;
+    }
+     .nav__item{
+    display: block;
+    margin: 0rem 0;
+ }
+
+ }
+
+ .custom-scroll-hide {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.custom-scroll-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari y Opera */
+}
+.bordered_letter{
+  /* -webkit-text-fill-color: var(--color-fondo-claro); */
+  -webkit-text-stroke: 1px var(--color-rosa-fresa);
+}
