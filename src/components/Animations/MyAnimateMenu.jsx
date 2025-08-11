@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { easeIn, motion, MotionConfig } from 'motion/react'
+import { Link } from 'react-router';
 
 function MyAnimateMenu({ links }) {
   const [active, setActive] = useState(false);
@@ -211,9 +212,12 @@ const MenuItem = ({ item }) => {
       }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}>
-         <a href={item.url} className=' w-full  text-center'>
+         <Link to={item.url} >
+            {item.text}
+        </Link>
+         {/* <a href={item.url} className=' w-full  text-center'>
           {item.text}
-        </a>
+        </a> */}
    
       
     </motion.li>
