@@ -1,5 +1,5 @@
 import { useLottie } from "lottie-react";
-import beeAnimation from "./lotties/bee.json";
+import beeAnimation from "./lotties/Bee.json";
 
 const style = {
   height: 200,
