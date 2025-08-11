@@ -20,9 +20,9 @@ export const navLinksMobile = [
   { text: "Shop", url: "/shop", active: true },
   { text: "Animals", url: "/farm-life/animals", active: true },
   { text: "Plants", url: "/farm-life/plants", active: true },
-  { text: "Animations", url: "/animations-6", active: true },
+  { text: "Animations", url: "/animations-6", active: false },
   { text: "Recipes", url: "/recipes", active: false },
   { text: "Contact", url: "/contact", active: true },
-  { text: "test", url: "/testDome", active: true },
+  { text: "test", url: "/testDome", active: false },
 ];
 // export default navLinks;
