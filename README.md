@@ -1,12 +1,30 @@
-# React + Vite
+# Rare Farm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rare Farm est une ferme imaginaire qui met en avant des animaux rares, mais bien réels.  
+Découvrez la vie à la ferme, des plantes et animaux exceptionnels, le tout présenté avec une interface moderne et conviviale. 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Démo en ligne
 
-## Expanding the ESLint configuration
+Vous pouvez visiter l'application déployée sur Netlify ici :  
+[https://rarefarm.netlify.app/](https://rarefarm.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Structure du projet
+
+Ce dépôt contient le **frontend** de Rare Farm, développé avec React et Vite.
+
+Le **backend** est un projet séparé, hébergé sur Render, qui expose une API REST consommée par ce frontend.
+
+- Dépôt backend : [Lien vers le dépôt backend] (https://github.com/Nootka11/rareFarmBack)
+
+---
+
+## ⚙️ Technologies utilisées
+
+- Frontend : React, Vite, CSS moderne  
+- Backend : Node.js, Express, MongoDB (Atlas)  
+- Déploiement : Netlify (frontend), Render (backend)  
+- Gestion des images et ressources statiques optimisées
